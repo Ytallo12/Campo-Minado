@@ -1,0 +1,296 @@
+<head>
+
+    <body>
+
+        <head>
+
+            <body>
+                <meta>
+                <!DOCTYPE html>
+                <html lang="en">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Campo minado</title>
+                    <style>
+                        /* reset */
+                        
+                        * {
+                            padding: 0;
+                            margin: 5px;
+                            border: 0;
+                            box-sizing: border-box;
+                            color: black;
+                        }
+                        
+                        body {
+                            /*perspective: 400px;*/
+                            background-color: hsl(200, 30%, 90%);
+                        }
+                        
+                        #jogo {
+                            margin: auto;
+                            width: 1100px;
+                            margin-top: 50px;
+                            border: solid black;
+                        }
+                        
+                        .espaco {
+                            width: 40px;
+                            height: 50px;
+                            display: inline-block;
+                            position: relative;
+                            border: solid black;
+                            margin: 5px;
+                            background-color: hsl(120, 50%, 30%);
+                            border-radius: 10px;
+                        }
+                        
+                        .imagem {
+                            margin-left: 950px;
+                            margin-top: -75px;
+                            position: absolute;
+                            z-index: 2;
+                        }
+                        
+                        .nivel {
+                            position: absolute;
+                            margin-top: 80px;
+                            margin-left: 530px;
+                            border: solid black;
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        }
+                        
+                        .voltar {
+                            position: absolute;
+                            margin-top: 825px;
+                            margin-left: 1000px;
+                        }
+                        
+                        .espaco:hover {
+                            background-color: white;
+                        }
+                        
+                        */ @font-face {
+                            font-family: lobster-two;
+                            src: url('LobsterTwo-Bold.ttf');
+                        }
+                        
+                        h1 {
+                            text-align: center;
+                            font-family: lobster-two;
+                            font-size: 5em;
+                            text-shadow: var(--overlay-size) var(--overlay-size) 0px var(--overlay-color), calc(-1 * var(--overlay-size)) calc(-1 * var(--overlay-size)) 5px var(--overlay-color);
+                        }
+                    </style>
+                </head>
+
+
+
+                <body>
+                    <div class="voltar">
+                        <center>
+                            <br><br>
+                            <a href="campo-minado1.html">
+                                <h2>voltar</h2>
+                            </a>
+
+                        </center>
+                    </div>
+                    <h1>Campo minado</h1>
+                    <div class="imagem">
+                        <img src="explosao.png" alt="" width="55" height="55"></div>
+                    <div id="jogo">
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+                        <div class="espaco"></div>
+
+
+                </body>
+
+                <div class="nivel">
+                    <select> 
+                        <option value="facil">Fácil</option>
+                        <option value="medio">Médio</option>
+                        <option value="dificil">Difícil</option>
+                    </select>
+                </div>
+
+                </html>
