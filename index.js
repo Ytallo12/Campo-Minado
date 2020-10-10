@@ -7,7 +7,7 @@ function criarMatriz(a, o) {
     console.log(matriz);
 }
 function criarTabela(a, o) {
-    gerarMatriz(a, o)
+    criarMatriz(a, o)
     var str = "";
     for (var i = 0; i < a; i++) {
         str += "<tr>";
@@ -64,7 +64,7 @@ function init() {
             bombas = 99;
             break;
     }
-    gerarTabela(linhas, colunas);
+    criarTabela(linhas, colunas);
     gerarBombas();
     gerarNumeros();
     //    mostrarMatriz();

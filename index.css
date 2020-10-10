@@ -13,7 +13,7 @@
       border-collapse: collapse;
   }
   td {
-      border: 1px solid black;
+      border: 1px solid #778899;
       width: 35px;
       height: 35px;
       text-align: center;
@@ -22,7 +22,7 @@
       background: #00FF7F;    
   }
   .n1, .n2, .n3, .n4, .n5, .n6, .n7, .n8 {
-      background-color: #eee;
+      background-color: rgb(240, 178, 178);
   }
   .n1 {
       color: blue;
