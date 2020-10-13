@@ -1,0 +1,105 @@
+               * {
+                padding: 0%;
+                margin: 0%;
+                border: 0%;
+                box-sizing: border-box;
+                color: black;
+            }
+
+
+
+            .letter{
+
+                text-align: center;
+                font-family: 'Press Start 2P', cursive;
+                font: 10%;
+            }
+            .link {
+            margin-top: 500px;
+            position: absolute;
+            background-color: white;
+            width: 400px;            
+            align-items: center; /*centralização*/      
+            border: solid ;
+            z-index: 0; 
+            border-radius: 10%;
+            }
+            .linkregra{
+            margin-top: 320px;
+            position: absolute;
+            background-color: white;
+            width: 500px;            
+            align-items: center; /*centralização*/      
+            border: solid ;
+            z-index: 0; 
+            border-radius: 10%;
+            }
+            .titulo{
+               text-align: center;
+               font-family: 'Press Start 2P', cursive;
+               margin-top: 1%;
+               position: relative;
+
+           }
+
+           .espaco {
+            width: 40px;
+            height: 50px;            
+            border: solid black;
+            margin: 0.2%;
+            background-color: hsl(120, 50%, 30%);
+            border-radius: 25%;
+            position: relative;
+        }
+
+        .espaco:hover {
+            background-color: white;
+        }
+
+
+        #jogo {
+            
+            width: 800px; 
+            display: flex;
+            justify-content: space-around; /*juntar os irmãos*/
+            align-items: center; /*centralização*/
+            flex-direction: row; /*coluna e linha*/
+            flex-wrap: wrap; /*quebra de linha*/          
+            border: solid black;
+            
+        }
+
+
+        .imagem {           
+            width: 1000px; 
+            display: flex;           
+            align-items: center; /*centralização*/
+                        
+        }
+     
+
+        .nivel {
+            
+            border: solid black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .voltar{
+
+        }
+        .h1{
+            text-align: center;
+
+
+        }
+        .body { 
+          width: 100%;
+          margin: auto;
+                      background-attachment: fixed;
+                  }
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+            }      
