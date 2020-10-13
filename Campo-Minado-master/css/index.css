@@ -25,23 +25,24 @@
                 z-index: 1;
                 border: solid rgb(32, 38, 116);
                 border-radius: 10%;
+                align-items: center;    
             }
             .titulo{
-             text-align: center;
-             font-family: 'Press Start 2P', cursive;
-             margin-top: 1%;
+               text-align: center;
+               font-family: 'Press Start 2P', cursive;
+               margin-top: 1%;
+               position: relative;
 
-         }
+           }
 
-         .espaco {
-            width: 4%;
-            height: 5%;
-            display: inline-block;
-            position: relative;
+           .espaco {
+            width: 40px;
+            height: 50px;            
             border: solid black;
             margin: 0.2%;
             background-color: hsl(120, 50%, 30%);
             border-radius: 25%;
+            position: relative;
         }
 
         .espaco:hover {
@@ -50,46 +51,50 @@
 
 
         #jogo {
-            margin: auto;
-            width: 57%;
-            margin-top: 3%;
-            margin-left: 20%;
-            margin-right: 10%;
+            
+            width: 800px; 
+            display: flex;
+            justify-content: space-around; /*juntar os irmãos*/
+            align-items: center; /*centralização*/
+            flex-direction: row; /*coluna e linha*/
+            flex-wrap: wrap; /*quebra de linha*/          
             border: solid black;
-
+            
         }
 
 
         .imagem {
-            margin-left: 47.4%;
-            margin-top: -2.1%;
-            position: absolute;
-            z-index: 2; 
-           
+            margin-left: 500px;
+            display: flex;
+            align-items: center;         
+            
         }
         .imagem:hover{
             color: transparent
         }
 
         .nivel {
-            position: absolute;
-            margin-top: 2%;
-            margin-left: 27%;
+            
             border: solid black;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
-        .voltar {   
-            position: absolute;
-            margin-top: 42%;
-            margin-left: 47.2%;
+        .voltar{
+
         }
         .h1{
             text-align: center;
 
+
         }
-        body { 
-        background-image: url('endereco-da-imagem.gif');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-}
+        .body { 
+          width: 100%;
+          margin: auto;
+                      background-attachment: fixed;
+                  }
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+            }      
