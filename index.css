@@ -1,105 +1,150 @@
-               * {
-                padding: 0%;
-                margin: 0%;
-                border: 0%;
-                box-sizing: border-box;
-                color: black;
+                 @font-face{
+                    font-family: PressStart2P;
+                    src: url(PressStart2P-Regular.ttf) ;
+                }
+
+                * {
+                    padding: 0%;
+                    margin: 0%;
+                    border: 0%;
+                    box-sizing: border-box;
+                    color: black;
+                }
+
+
+
+                .letter{
+
+                    text-align: center;
+                    font-family: 'Press Start 2P', cursive;
+                    font: 15%;
+                    margin-top: 150px;
+                }
+
+                .link {
+                    margin-left: 60px;
+                    margin-top: 35px;
+                    position: absolute;
+                    background-color: transparent;
+                    width: 400px;            
+                    align-items: center; /*centralização*/      
+                    z-index: 0; 
+
+                }
+
+                .linkregra{
+                    margin-left: 60px;
+                    margin-top: 300px;
+                    position: absolute;
+                    background-color: transparent;
+                    width: 250px;            
+                    align-items: center; /*centralização*/      
+                    z-index: 0;
+                    line-height: 14px; 
+
+                    
+                }
+
+                .titulo{
+                 text-align: center;
+                 font-family: PressStart2P;
+                 margin-top: 3%;
+                 position: relative;
+                 text-decoration: none;
+                 color: #c4c4c4;
+                 font-size: 25px;
+             }
+
+             .tituloregras{
+                 text-align: center;
+                 font-family: PressStart2P;
+                 margin-top: 3%;
+                 position: relative;
+                 text-decoration: none;
+                 color: #c4c4c4;
+                 font-size: 11px;
+                 line-height: 15px; 
+
+             }         
+
+             .espaco {
+                width: 50px;
+                height: 50px;
+                border: solid black;                
+                background-color: hsl(120, 30%, 70%);
+                border-radius: 25%;
+                position: relative;
+                text-align: center
             }
 
-
-
-            .letter{
-
-                text-align: center;
-                font-family: 'Press Start 2P', cursive;
-                font: 10%;
+            .espaco:hover {
+                background-color: white;
             }
-            .link {
-            margin-top: 500px;
-            position: absolute;
-            background-color: white;
-            width: 400px;            
-            align-items: center; /*centralização*/      
-            border: solid ;
-            z-index: 0; 
-            border-radius: 10%;
+            .espaco a{
+                padding: 10px;
+                text-decoration: none; 
             }
-            .linkregra{
-            margin-top: 320px;
-            position: absolute;
-            background-color: white;
-            width: 500px;            
-            align-items: center; /*centralização*/      
-            border: solid ;
-            z-index: 0; 
-            border-radius: 10%;
+            #bomba{
+                background-image: url('/imagens/bomba.jpg');
+                background-size: 20%;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
-            .titulo{
-               text-align: center;
-               font-family: 'Press Start 2P', cursive;
-               margin-top: 1%;
-               position: relative;
 
-           }
+            #jogo {
 
-           .espaco {
-            width: 40px;
-            height: 50px;            
-            border: solid black;
-            margin: 0.2%;
-            background-color: hsl(120, 50%, 30%);
-            border-radius: 25%;
-            position: relative;
-        }
-
-        .espaco:hover {
-            background-color: white;
-        }
-
-
-        #jogo {
-            
-            width: 800px; 
-            display: flex;
-            justify-content: space-around; /*juntar os irmãos*/
-            align-items: center; /*centralização*/
-            flex-direction: row; /*coluna e linha*/
-            flex-wrap: wrap; /*quebra de linha*/          
-            border: solid black;
-            
-        }
-
-
-        .imagem {           
-            width: 1000px; 
-            display: flex;           
-            align-items: center; /*centralização*/
-                        
-        }
-     
-
-        .nivel {
-            
-            border: solid black;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        .voltar{
-
-        }
-        .h1{
-            text-align: center;
-
-
-        }
-        .body { 
-          width: 100%;
-          margin: auto;
-                      background-attachment: fixed;
-                  }
-            .container{
+                width: 1100px;
                 display: flex;
-                align-items: center;
-                justify-content: space-around;
-                flex-direction: column;
-            }      
+                justify-content: space-around; /*juntar os irmãos*/
+                align-items: center; /*centralização*/
+                flex-direction: row; /*coluna e linha*/
+                flex-wrap: wrap; /*quebra de linha*/          
+            }
+
+            .imagem {     
+                margin-top: 80px; 
+                margin-left: 100px;     
+                width: 900px;
+                display: flex;           
+                align-items: center; /*centralização*/
+            }
+
+
+            .nivel {
+
+                border: solid black;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .voltar{
+
+            }
+            .h1{
+                text-align: center;
+
+
+            }
+            .body { 
+              width: 100%;
+              margin: auto;
+              background-attachment: fixed;
+          }
+          .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .bomba{
+           width: 20px; 
+           height: 25px;
+           display: flex;           
+           align-items: center;
+
+       }  
+
+       .numero{
+        font-family: PressStart2P;
+        font-size: 10px; 
+        background-size: 20%;   
+    }
